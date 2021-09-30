@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    width:100%;
+    
+}
+
+#navbar::before{
+    content:"";
+    background-color:rgb(73, 4, 9);
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+
+/* navigation bar : image and logo */
+#logo{
+    
+    margin:10px 2px;
+    background-color:rgb(0, 255, 42);
+    opacity:0.6;
+    border-radius: 5px;
+}
+#logo img{
+    height:35px;
+    margin: 3px 5px;
+}
+
+#navbar ul{
+    display:flex;
+    
+}
+
+
+
+
+
+
+#navbar ul li{
+    display:flex;
+    list-style-type:none;
+    margin:10px;
+    font: size 1.3rem;
+
+
+}
+
+#navbar ul li a{
+    color:rgb(82, 23, 23);
+    display:block;
+    padding:22px 26px;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+
+
+
+}
+#navbar ul li a:hover{
+    color:black;
+    display:block;
+    padding:22px 26px;
+    font-size: 23px;
+    border-radius:5px;
+    background-color:blanchedalmond;
+    cursor:auto;
+    
+    text-decoration: none;
+
+
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+   font-family: 'Ubuntu', sans-serif;
+   padding: 2px 200px;
+    height: 500px;
+   top:0px;
+    
+}
+
+#home::before{
+   content:"";
+    background:url(https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_960_720.jpg) no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+/* .image{
+    height: 40%;
+} */
+#home h1{
+    color:rgb(14, 13, 13);
+    text-align:center; 
+
+
+
+}
+#home p{
+    color:white;
+    text-align:center;
+    font-family: 'Ephesis', cursive;
+    font-size:20px;
+    
+}
+
+/* service section */
+#service-area{
+    background-color: whitesmoke;
+}
+#service{
+    
+    display:flex;
+   
+}
+#service .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:5px 25px;
+    border-radius: 23px;
+    background-color:rgb(243, 195, 106)
+}
+#service .box img{
+    border-radius: 3px;
+    height:160px;
+    margin:auto;
+    display:block;
+    
+
+}
+#service .box p{
+    font-family: 'Ephesis', cursive;
+}
+
+/* client section */
+
+#client-section{
+        height:333px;
+        position:relative;
+
+}
+#client-section::before{
+       content:"";
+       position:absolute;
+        background:url(https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/newscms/2021_14/1698334/takeout-mc-main1-210407.jpg) no-repeat center center/cover;
+        width:100%;
+        height:342px;
+        z-index:-1;
+        opacity:0.8;
+
+    }
+#clients{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#clients img{
+    height:124px;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+}
+
+
+/* contact section */
+
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:1;
+    background:url(https://nysba.org/app/uploads/2020/01/Contact-Us_Hero-Image-1-1280x640.webp) no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    text-align:left;
+    padding: 38px;
+
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size:1.1rem;
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size:1.3rem;
+    font-family: sans-serif;
+}
+
+
+
+footer{
+    background:rgb(6, 34, 8);
+    color:white;
+}
+
+/* utitlity classes */
+
+.h-primary {
+    font-size:2.8rem;
+    padding:12px;
+     font-family: 'Ubuntu', sans-serif;
+      
+}
+.h-secondry{
+    font: size 2.3rem;
+    padding:12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    padding:6px 20px;
+    border:1px solid white;
+    background-color:brown;
+    border-radius: 10px; 
+    color:white;
+    margin:17px;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
